@@ -9,5 +9,15 @@
         android:id="@+id/recetaMainFragment"
         android:name="com.example.recetas_cocina_prueba.RecetaMainFragment"
         android:label="fragment_recetarecycler_list"
-        tools:layout="@layout/fragment_recetarecycler_list" />
+        tools:layout="@layout/fragment_recetarecycler_list" >
+        <action
+            android:id="@+id/action_recetaMainFragment_to_recetaDetalleFragment"
+            app:destination="@id/recetaDetalleFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/recetaDetalleFragment"
+        android:name="com.example.recetas_cocina_prueba.RecetaDetalleFragment"
+        android:label="fragment_receta_detalle"
+        tools:layout="@layout/fragment_receta_detalle" />
 </navigation>

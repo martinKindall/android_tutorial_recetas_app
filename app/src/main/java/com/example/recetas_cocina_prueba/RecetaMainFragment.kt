@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import com.example.recetas_cocina_prueba.data.Receta
 
 import com.example.recetas_cocina_prueba.dummy.DummyContent
@@ -36,7 +37,8 @@ class RecetaMainFragment : Fragment() {
                     DummyContent.ITEMS,
                     object: OnListFragmentInteractionListener {
                         override fun onListFragmentInteraction(item: Receta) {
-                            Log.d("mis_recetas", "la receta es: " + item.nombre)
+                            findNavController()
+                                .navigate(R.id.action_recetaMainFragment_to_recetaDetalleFragment)
                         }
                     }
                 )
