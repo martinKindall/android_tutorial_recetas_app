@@ -24,6 +24,16 @@
         <TextView
             android:id="@+id/receta_detalle_descripcion"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/receta_detalle_completa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="16dp"/>
     </LinearLayout>
 </ScrollView>

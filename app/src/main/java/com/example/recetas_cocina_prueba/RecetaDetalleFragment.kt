@@ -50,6 +50,8 @@ class RecetaDetalleFragment : Fragment() {
                 .text = receta.nombre
             mainView.findViewById<TextView>(R.id.receta_detalle_descripcion)
                 .text = receta.descripcion
+            mainView.findViewById<TextView>(R.id.receta_detalle_completa)
+                .text = receta.receta
         })
 
         return mainView
