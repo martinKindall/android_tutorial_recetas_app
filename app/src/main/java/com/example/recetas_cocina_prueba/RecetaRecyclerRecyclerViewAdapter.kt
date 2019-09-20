@@ -48,7 +48,7 @@ class RecetaRecyclerRecyclerViewAdapter(
         this.parent?.let {
             Glide
                 .with(it)
-                .load("https://tacos10.com/storage/2018/12/Tortillas-para-tacos-mexicanos.jpg")
+                .load(item.link)
                 .centerCrop()
                 .into(holder.mImage)
         }
